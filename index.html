@@ -14,6 +14,7 @@
 	    <script type="text/javascript">
 	    console.log("V001");
       var userEmail;
+		    var score;
       window.onmessage = (event) => {
         if (event.data) {
           //document.getElementById("theLabel").innerHTML = event.data;
@@ -27,6 +28,14 @@
 		    console.log("IsUnityReady fucntion has run");
 	    	SetEmail();
 	    }
+		    
+		    function Score(MessageToSend){
+		    	console.log("Score fucntion has run");
+			    if(MessageToSend == "3"){
+			    	score = 3;
+				    console.log(score);
+			    }
+		    }
 	    
 	 function SetEmail() {
 		console.log("setEmail fucntion has run");
