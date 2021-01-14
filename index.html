@@ -29,7 +29,7 @@
 	    }
 	    
 	 function SetEmail() {
-		console.log("setEmail fucntion has run");
+		console.log("setEmail fucntion has run " + userEmail);
 	 	//document.getElementById("email").innerHTML = userEmail;
 		 unityInstance.SendMessage('Bridge', 'SendToUnity', userEmail);
 	 }
